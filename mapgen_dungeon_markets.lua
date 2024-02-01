@@ -35,7 +35,7 @@ local named_waypoints_modpath = minetest.get_modpath("named_waypoints")
 local name_generator_modpath = minetest.get_modpath("name_generator")
 
 local goblin_named = minetest.settings:get_bool("commoditymarket_name_goblin_markets", true) and named_waypoints_modpath
-local under_named = minetest.settings:get_bool("commoditymarket_name_under_markets", true) and named_waypoints_modpath
+local under_named = minetest.settings:get_bool("commoditymarket_name_under_markets", false) and named_waypoints_modpath
 
 local item_required = nil
 if minetest.settings:get_bool("commoditymarket_hud_requires_item", true) then

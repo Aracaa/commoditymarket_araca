@@ -32,7 +32,7 @@ if default_modpath then
 	commoditymarket_fantasy.wood_sounds = default.node_sound_wood_defaults()
 	commoditymarket_fantasy.chest_locked = "default:chest_locked" -- used in the trader's caravan post recipe
 	commoditymarket_fantasy.gold_ingot = "default:gold_ingot"
-	commoditymarket_fantasy.coal_lump = "default:coal_lump" -- used by the goblin market
+	commoditymarket_fantasy.gobelin_currency = "default:diamond" -- used by the goblin market
 
 	commoditymarket_fantasy.undermarket_currency = {
 		["default:mese"] = 9*9*20,
@@ -48,7 +48,7 @@ elseif mcl_modpath then
 	commoditymarket_fantasy.wood_sounds = mcl_sounds.node_sound_wood_defaults()
 	commoditymarket_fantasy.chest_locked = "mcl_chests:chest" -- used in the trader's caravan post recipe
 	commoditymarket_fantasy.gold_ingot = "mcl_core:gold_ingot"
-	commoditymarket_fantasy.coal_lump = "mcl_core:coal_lump" -- used by the goblin market
+	commoditymarket_fantasy.gobelin_currency = "mcl_core:diamond" -- used by the goblin market
 	
 	commoditymarket_fantasy.undermarket_currency = {
 		["mesecons:wire_00000000_off"] = 1
@@ -94,7 +94,6 @@ commoditymarket_fantasy.usage_help = S("Right-click on this to open the market i
 
 dofile(modpath.."/caravan_markets.lua")
 dofile(modpath.."/dungeon_markets.lua")
-dofile(modpath.."/village_markets.lua")
 
 -- These globals were only needed during initialization, dispose of them afterward
 commoditymarket_fantasy = nil
