@@ -20,7 +20,7 @@ local goblin_def = {
 	description = S("Goblin Exchange"),
 	long_description = S("One does not usually associate Goblins with the sort of sophistication that running a market requires. Usually one just associates Goblins with savagery and violence. But they understand the principle of tit-for-tat exchange, and if approached correctly they actually respect the concepts of ownership and debt. Goblins deal in diamonds as their form of currency."),
 	currency = {
-		[gobelin_currency] = 1
+		[gobelin_currency] = 10
 	},
 	currency_symbol = "Ð", -- ascii code 209
 	inventory_limit = 2500,
